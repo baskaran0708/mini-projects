@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Times New Roman', Times, serif;
+
+}
+.bg1{
+    width: 100vw;
+    height: 130vh;
+    background-image: url(pexels-nicolas-poupart-1241079-2360569.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text{
+    font-size: 120px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0.6;
+    overflow: hidden;
+}
