@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: color #fffdfd;;
+}
+.quote-conatainer{
+    background-color: #f8d5d5;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 500px;
+}
+
+.quote{
+    font-family: "Grechen Fuemen", cursive;
+    font-size: 25px;
+    color: slateblue;
+    margin-bottom: 14px;
+}
+.author{
+    color:#555;
+    font-size:14px;
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px 20px;
+    font-size:14px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: violet;
+}
