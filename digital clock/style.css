@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family:digital7;
+    src: url(digital-7/digital-7.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+
+
+}
+:root{
+    --light-color:rgb(191, 243, 59);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(143, 224, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    gap: 50px;
+}
+h2{
+    color: brown;
+    font-size: 50px;
+    font-weight: 500;
+}
+.frame{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(132, 12, 72);
+    border: 50px solid #5fb17d;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+   
+    font-size: 80px;
+    text-align: center;
+    padding: 10px;
+    line-height: 180px;
+   
+
+
+}
+.clock{
+    font-family: digital7;
+    color: white;
+    text-shadow: 0 0 20px var(--light-color);
+   position: relative;
+}
+.clock::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 48px;
+    top:0;
+    filter: blur(40px);
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--light-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    filter: blur(40px);
+
+}
